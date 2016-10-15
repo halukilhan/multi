@@ -30,7 +30,7 @@
 //		if (q && o) {
 			document.getElementById('q').value = decodeURIComponent(q.replace('%20', ' '));
 //			document.getElementById('o').value = o;
-			var eksi = 'http://www.eksisozluk.com/';
+			var eksi = 'http://www.eksisozluk.com/' + q;
 			var aliexpress = 'http://m.aliexpress.com/search.htm?sortType' + (o == 12 ? 'MAIN' : (o == 15 ? 'PP_A' : 'PP_D')) + '&keywords=' + q;
 			var amazon = 'http://www.amazon.com/gp/aw/s/ref=is_s?s=' + (o == 12 ? 'relevanceblender' : (o == 15 ? 'price-asc-rank' : 'price-desc-rank')) + '&k=' + q;
 			loadURL(eksi, 0);
